@@ -13,17 +13,12 @@ npm run dev
 
 ## Rediger indholdet
 
-**Alt indhold ligger i `content/cv.ts`.** Du behøver ikke røre resten af projektet for at opdatere dit CV — navn, kontaktoplysninger, profiltekst, kompetencer, jobs, uddannelse og projekter styres derfra.
+**Alt indhold ligger i `content/cv.ts`.** Du behøver ikke røre resten af projektet for at opdatere dit CV — navn, kontaktoplysninger, introtekst, erfaring, projekter, kompetencer og uddannelse styres derfra.
 
-Søg efter `TODO` i den fil — det er felterne, du mangler at udfylde:
+To ting er værd at holde øje med:
 
-- telefonnummer
-- by / område
-- GitHub-brugernavn
-- LinkedIn-URL
-- hvilken database du har brugt
-- engelskniveau
-- domænet i `site.url` når siden er deployet
+- `site.url` skal matche dit rigtige Vercel-domæne (bruges kun til metadata, når nogen deler linket).
+- `projects[].href` er udkommenteret. Fjern `//` og indsæt repo-URL'en, når koden ligger offentligt — så bliver projektet klikbart.
 
 ## Læg din PDF på siden
 
