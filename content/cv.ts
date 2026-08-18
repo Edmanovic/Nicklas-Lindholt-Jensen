@@ -2,24 +2,25 @@
  * ─────────────────────────────────────────────────────────────
  *  ALT INDHOLD PÅ SIDEN STYRES HERFRA.
  *  Du behøver ikke røre resten af projektet for at opdatere dit CV.
- *  Felter markeret med  // TODO  skal du udfylde.
+ *  Alt er udfyldt — ret bare teksten direkte når noget ændrer sig.
  * ─────────────────────────────────────────────────────────────
  */
 
 export const site = {
   // Bruges til <title>, deling på LinkedIn m.m.
-  url: "https://nicklasjensen.vercel.app", // TODO: ret til dit rigtige domæne når det er deployet
+  // Ret denne hvis Vercel giver dig et andet domæne end det forventede.
+  url: "https://nicklas-lindholt-jensen.vercel.app",
 };
 
 export const person = {
   name: "Nicklas L. Jensen",
   title: "Platform- og infrastrukturudvikler",
   tagline: "Linux · Docker · Automatisering",
-  location: "TODO: din by / område",
+  location: "Skjern",
   email: "nicklaslj03@gmail.com",
-  phone: "TODO: dit telefonnummer",
-  github: "https://github.com/TODO-dit-brugernavn",
-  linkedin: "https://linkedin.com/in/TODO-dit-navn",
+  phone: "+45 81 73 03 30",
+  github: "https://github.com/Edmanovic",
+  linkedin: "https://www.linkedin.com/in/nicklas-lindholt-jensen-716a1b315/",
   /** Læg din PDF i /public og hold navnet her i sync. */
   cvPdf: "/CV-Nicklas-L-Jensen.pdf",
 };
@@ -46,7 +47,7 @@ export const skills: SkillGroup[] = [
   },
   {
     label: "Data",
-    items: ["TODO: PostgreSQL / MySQL / MongoDB", "Backup", "Adgangsstyring"],
+    items: ["PostgreSQL", "Backup", "Adgangsstyring"],
   },
   {
     label: "Drift & overvågning",
@@ -80,7 +81,7 @@ export const experience: Job[] = [
       "Designet og opbygget hele platformens infrastruktur fra bunden på Ubuntu Server med Docker og Docker Compose i et multi-container-setup.",
       "Opsat Nginx som reverse proxy med SSL/TLS-terminering foran platformens services.",
       "Udviklet både frontend og backend i JavaScript/TypeScript og Python, med AI-assisteret udvikling som fast del af arbejdsgangen.",
-      "Opsat og driftet platformens database inklusive adgangsstyring og backupstrategi.",
+      "Opsat og driftet platformens PostgreSQL-database inklusive adgangsstyring og backupstrategi.",
       "Automatiseret tilbagevendende driftsopgaver med Bash-scripts og planlagte jobs, og etableret overvågning og logopsamling, så fejl fanges før brugerne oplever dem.",
       "Versionsstyret al kode i Git/GitHub og eneansvarlig for platformens sikkerhed, stabilitet og oppetid i produktion.",
     ],
@@ -131,9 +132,9 @@ export const projects: Project[] = [
     name: "Esportserien – platform",
     description:
       "Selvhostet turneringsplatform med containeriseret backend og frontend bag Nginx, automatiseret backup og overvågning af oppetid.",
-    stack: ["Docker Compose", "Nginx", "TypeScript", "Python", "Ubuntu"],
+    stack: ["Docker Compose", "Nginx", "TypeScript", "Python", "PostgreSQL", "Ubuntu"],
     // href: "https://github.com/dit-brugernavn/esportserien", // TODO
   },
 ];
 
-export const languages = "Dansk (modersmål) · Engelsk (TODO: niveau)";
+export const languages = "Dansk (modersmål) · Engelsk (flydende i skrift og tale)";
